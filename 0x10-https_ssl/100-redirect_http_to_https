@@ -26,7 +26,7 @@ frontend www-http
 
 
 frontend www-https
-   bind   0.0.0.0:443 ssl crt /etc/letsencrypt/live/www.ephrem.tech/all.pem
+   bind   0.0.0.0:443 ssl crt /etc/letsencrypt/live/www.amare.tech/all.pem
    reqadd X-Forwarded-Proto:\ https
    acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl
@@ -35,8 +35,8 @@ frontend www-https
 backend www-backend
    balance  roundrobin
    redirect scheme https if !{ ssl_fc }
-   server 1319-web-01 34.75.35.59:80 check
-   server 1319-web-02 3.238.29.119:80 check
+   server 159164-web-01 34.202.234.225:80 check
+   server 159164-web-02 54.160.65.231:80 check
 
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:54321
