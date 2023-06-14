@@ -5,7 +5,6 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/AmareGatie/alx-system_engineering-devops/master/0x19-postmortem/image.gif" width=100% height=100% />
 </p>
-https://github.com/AmareGatie/alx-system_engineering-devops.git
 
 ### Incident report for [504 error / Site Outage](https://github.com/AmareGatie/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3)
 
